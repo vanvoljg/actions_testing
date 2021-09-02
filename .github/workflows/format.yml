@@ -2,7 +2,7 @@ name: Check Code Format
 
 on:
   workflow_run:
-    workflows: ['Compile Code']
+    workflows: ['Compile My Code']
     types: [completed]
 
 jobs:
