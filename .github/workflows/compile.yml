@@ -1,0 +1,14 @@
+name: Complie My Code
+
+on: push
+
+jobs:
+  compile:
+    name: Compile Code
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # - uses: actions/checkout@v2
+      - name: Echo
+        run: echo "Compile Step Would Go Here"

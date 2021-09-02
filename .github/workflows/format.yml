@@ -1,0 +1,17 @@
+name: Check Code Format
+
+on:
+  workflow_run:
+    workflows: ['Compile Code']
+    types: [completed]
+
+jobs:
+  format:
+    name: Check Formatting
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # - uses: actions/checkout@v2
+      - name: Check Format
+        run: echo "Format check here"
