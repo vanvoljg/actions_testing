@@ -1,0 +1,13 @@
+name: Dialyzer
+
+on: push
+
+jobs:
+  format:
+    name: Dialyzer
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Dialyzer
+        run: echo 'Run Dialyzer'

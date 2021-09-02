@@ -1,0 +1,16 @@
+name: Credo
+
+on:
+  workflow_run:
+    workflows: ['Compile']
+    types: [completed]
+
+jobs:
+  format:
+    name: Run Credo
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run Credo
+        run: echo 'Credo checks now'
