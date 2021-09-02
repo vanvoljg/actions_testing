@@ -1,8 +1,8 @@
-name: Check Code Format
+name: Format
 
 on:
   workflow_run:
-    workflows: ['Compile My Code']
+    workflows: ['Compile']
     types: [completed]
 
 jobs:
@@ -13,6 +13,5 @@ jobs:
     if: github.event.workflow_run.conclusion == 'success'
 
     steps:
-      # - uses: actions/checkout@v2
       - name: Check Format
         run: echo 'Format check here'
