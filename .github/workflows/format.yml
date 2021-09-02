@@ -15,4 +15,4 @@ jobs:
     steps:
       # - uses: actions/checkout@v2
       - name: Check Format
-        run: echo "Format check here"
+        run: echo 'Format check here'
